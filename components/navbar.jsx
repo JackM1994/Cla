@@ -28,7 +28,7 @@ const Navbar = () => {
                             <li className='ml-10 text-sm uppercase hover:border-b cursor-pointer'>About</li>
                         </Link>
                         <Link href="/">
-                            <li className='ml-10 text-sm uppercase hover:border-b cursor-pointer'>Skills</li>
+                            <li className='ml-10 text-sm uppercase hover:border-b cursor-pointer'>Services</li>
                         </Link>
                         <Link href="/">
                             <li className='ml-10 text-sm uppercase hover:border-b cursor-pointer'>Projects</li>
@@ -74,7 +74,7 @@ const Navbar = () => {
                                 <li className='py-4 text-sm cursor-pointer'>About</li>
                             </Link>
                             <Link href='/'>
-                                <li className='py-4 text-sm cursor-pointer'>Skills</li>
+                                <li className='py-4 text-sm cursor-pointer'>Services</li>
                             </Link>
                             <Link href='/'>
                                 <li className='py-4 text-sm cursor-pointer'>Project</li>

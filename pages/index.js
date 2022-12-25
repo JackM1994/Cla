@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>CLA</title>
+        <title>CLA Landscaping</title>
         <meta name="description" content="Generated"></meta>
         <link ref="icon" href="/favicon.ico"></link>
       </Head>

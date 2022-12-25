@@ -18,25 +18,25 @@ const Projects = () => {
                     title='Fluid Life' 
                     backgroundImg={fluidLifeImg} 
                     address='9318 48 St NW Edmonton'
-                    projectUrl='/' 
+                    projectUrl='fluid-life' 
                 />
                   <ProjectsItem 
                     title='Ardrossan' 
                     backgroundImg={ardrossanImg} 
                     address = '80 1st Ave, Ardrossan'
-                    projectUrl='/' 
+                    projectUrl='ardrossan' 
                 />
                   <ProjectsItem 
                     title='EIA' 
                     backgroundImg={eiaImg} 
                     address = '1 Outlet Collection Way, Leduc'
-                    projectUrl='/' 
+                    projectUrl='eia' 
                 />
                   <ProjectsItem 
                     title='Rosenthal Showhomes' 
                     backgroundImg={rosenthalImg} 
                     address = '8331 224 St NW, Edmonton'
-                    projectUrl='/' 
+                    projectUrl='rosenthal' 
                 />
                 </div>
             </div>

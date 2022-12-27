@@ -1,39 +1,55 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, {useState} from 'react'
+import navLogo from '../public/navLogo.png'
+import React, {useState , useEffect} from 'react'
 import {AiOutlineClose,AiOutlineMail,AiOutlineMenu} from 'react-icons/ai'
 import {FaLinkedinIn} from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 const Navbar = () => {
     const [nav, setNav] = useState(false)
-
+    const [shadow, setShadow] = useState(false)
     const handleNav = () =>{
         setNav(!nav)
-    }
+    };
+
+    useEffect(() =>{
+        const handleShadow = () => {
+            if(window.scrollY >= 90){
+                setShadow(true);
+            } else {
+                setShadow(false)
+            }
+        }
+        window.addEventListener('scroll' , handleShadow);
+    }, [])
     return(
-        <div className='fixed w-full h-20 bg-gray-300 shadow-xl z-[100000]' >
+        <div className={ shadow ? 'fixed w-full h-20  shadow-xl z-[100000]' : 'fixed w-full h-20 z[100] bg-white'} >
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-                <Image 
-                    src='/../public/navLogo.png' 
-                    alt='/' 
-                    width='75' 
-                    height='65'
-                />
+                <Link href='/'>
+                    <Image 
+                        src={navLogo}
+                        alt='/' 
+                        width='75' 
+                        height='65'
+                        className='cursor-pointer'
+                    />
+                </Link>
+                
                 <div>
                     <ul className='hidden md:flex'>
                         <Link href="/">
                             <li className='ml-10 text-sm uppercase hover:border-b cursor-pointer'>Home</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="/#about">
                             <li className='ml-10 text-sm uppercase hover:border-b cursor-pointer'>About</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="/#services">
                             <li className='ml-10 text-sm uppercase hover:border-b cursor-pointer'>Services</li>
                         </Link>
-                        <Link href="/">
-                            <li className='ml-10 text-sm uppercase hover:border-b cursor-pointer'>Projects</li>
+                        <Link href="/#projects">
+                            <li className='ml-10 text-sm uppercase hover:border-b cursor-pointer text-green'>Projects</li>
                         </Link>
-                        <Link href="/">
+                        <Link href="/#contact">
                             <li className='ml-10 text-sm uppercase hover:border-b cursor-pointer'>Contact</li>
                         </Link>
                     </ul>
@@ -68,19 +84,19 @@ const Navbar = () => {
                     <div className='py-4 flex flex-col'>
                         <ul className='uppercase'>
                             <Link href='/'>
-                                <li className='py-4 text-sm cursor-pointer'>Home</li>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm cursor-pointer'>Home</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm cursor-pointer'>About</li>
+                            <Link href='/#about'>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm cursor-pointer'>About</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm cursor-pointer'>Services</li>
+                            <Link href='/#services'>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm cursor-pointer'>Services</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm cursor-pointer'>Project</li>
+                            <Link href='/#projects'>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm cursor-pointer'>Project</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm cursor-pointer'>Contact</li>
+                            <Link href='/#contact'>
+                                <li onClick={() => setNav(false)} className='py-4 text-sm cursor-pointer'>Contact</li>
                             </Link>
                         </ul>
                         <div className='pt-40'>

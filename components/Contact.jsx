@@ -7,7 +7,7 @@ import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
 
 const Contact = () => {
     return (
-        <div className='w-full lg:h-screen'>
+        <div id='contact' className='w-full lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
                 <p className='text-xl tracking-widest uppercase text-[#fdad5c]'>Contacts</p>
                 <h2 className='text-3xl sm:text-4xl font-bold py-4'>Get In Touch</h2>
@@ -19,8 +19,8 @@ const Contact = () => {
                                 <img className='rounded-xl hover:scale-105 ease-in duration-300' src="https://cdn.pixabay.com/photo/2017/08/06/13/53/construction-2592709_1280.jpg" alt="" />
                             </div>
                             <div>
-                                <h2 className='text-3xl sm:text-4xl font-bold'>Name here</h2>
-                                <p>Any Landscaping needs</p>
+                                <h2 className='text-3xl sm:text-4xl font-bold py-4'>CLA Landscaping</h2>
+                                <p className='text-m tracking-widest uppercase text-[#fdad5c]'>All Landscaping needs</p>
                                 <p className='py-4'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </div>
                             <div>

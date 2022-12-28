@@ -33,7 +33,7 @@ module.exports = {
         medium: '0 8px 30px rgba(0, 0, 0, 0.12)',
       },
       backgroundImage: {
-        'hero': "url('../public/main.jpg')",
+        'hero': "url('../public/main-copy.jpg')",
       },
     },
   },

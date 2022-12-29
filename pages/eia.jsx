@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import {RiRadioButtonFill} from 'react-icons/ri'
-import fluidlifeImg from '../public/fluid-life.jpeg'
+import eiaImg from '../public/eia.webp'
 
 
 const eia = () => {
@@ -9,16 +10,16 @@ const eia = () => {
         
         <div className='w-full'>
             
-            <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
-                <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10' />
+            <div className='w-screen h-[30vh] lg:h-[50vh] relative'>
+                <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[50vh] bg-black/80 z-10' />
                     <Image 
                         className='absolute ' layout='fill' objectFit='cover' 
-                        src={fluidlifeImg}
+                        src={eiaImg}
                         alt='/'
                     />
                     <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-                        <h2 className='py-2'>Fluid-Life</h2>
-                        <h3>9318 48 St NW Edmonton</h3>
+                        <h2 className='py-2'>EIA Outlet Mall</h2>
+                        <h3>1 Outlet Collection Way, Leduc</h3>
                     </div>
                 </div>
                 <div className='max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8'>
@@ -26,7 +27,7 @@ const eia = () => {
                         <p className='text-[#fdad5c] text-xl'>Project</p>
                         <h2>Overview</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <button className='px-8 py-2 mt-4 mr-8'>Fluid Life</button>
+                        <Link href='https://www.premiumoutlets.com/outlet/premium-outlet-collection-edmonton-international-airport'><button className='px-8 py-2 mt-4 mr-8'><a target="_blank">EIA Outlet Mall</a></button></Link>
                     </div>
                     <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
                         <div className='p-2'>
@@ -49,6 +50,12 @@ const eia = () => {
                                 </p>
                                 <p className='text-gray-600 py-2 flex items-center'>
                                     <RiRadioButtonFill className='pr-1'/>Sod Laying
+                                </p>
+                                <p className='text-gray-600 py-2 flex items-center'>
+                                    <RiRadioButtonFill className='pr-1'/>Rock Wall
+                                </p>
+                                <p className='text-gray-600 py-2 flex items-center'>
+                                    <RiRadioButtonFill className='pr-1'/>Bedrock
                                 </p>
                             </div>
                         </div>

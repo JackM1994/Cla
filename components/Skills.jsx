@@ -21,7 +21,10 @@ const Skills = () => {
                         </div>
                             <div className='flex flex-col items-center justify-center'>
                                 <h3 className='font-bold'>Maintenance</h3>
-                            </div>   
+                            </div>      
+                    </div>
+                    <div className='py-4 flex flex-col items-center justify-center'>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                 </div>
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
@@ -38,6 +41,27 @@ const Skills = () => {
                                 <h3 className='font-bold'>Landscape Construction</h3>
                             </div>
                     </div>
+                    <div className='py-4 flex flex-col items-center justify-center'>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+                <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
+                    <div className='grid grid-cols-2 gap-4 justify-center items-center'>
+                        <div className='m-auto'>
+                            <Image 
+                                src="/../public/planting.png"
+                                alt="/"
+                                height='96'
+                                width='96'
+                            />
+                        </div>
+                            <div className='flex flex-col items-center justify-center'>
+                                <h3 className='font-bold'>Tree and Shrub Planting</h3>
+                            </div>
+                    </div>
+                    <div className='py-4 flex flex-col items-center justify-center'>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
                 </div>
                 <div className='p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300'>
                     <div className='grid grid-cols-2 gap-4 justify-center items-center'>
@@ -52,6 +76,9 @@ const Skills = () => {
                             <div className='flex flex-col items-center justify-center'>
                                 <h3 className='font-bold'>Snow Removal</h3>
                             </div>  
+                    </div>
+                    <div className='py-4 flex flex-col items-center justify-center'>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                 </div>
             </div>

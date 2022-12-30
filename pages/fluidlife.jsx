@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import {RiRadioButtonFill} from 'react-icons/ri'
 import fluidlifeImg from '../public/fluid-life.jpeg'
+import Link from 'next/link'
 
 
 const fluidlife = () => {
@@ -28,7 +29,7 @@ const fluidlife = () => {
                         <button className='px-8 py-2 mt-4 mr-8'>Fluid Life</button>
                     </div>
                     <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
-                        <div className='p-2'>
+                        <div className='grid grid-cols-3 md:grid-cols-1 p-2'>
                             <p className='text-center font-bold pb-2'>Job Specs</p>
                             <div>
                                 <p className='text-gray-600 py-2 flex items-center'>
@@ -52,6 +53,9 @@ const fluidlife = () => {
                             </div>
                         </div>
                     </div>
+                    <Link href="/#projects">
+                        <p className='underline cursor-pointer'>Back</p>
+                    </Link>
                 </div>
         </div>
     )

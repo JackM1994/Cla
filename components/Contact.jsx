@@ -4,8 +4,13 @@ import {AiOutlineMail} from 'react-icons/ai'
 import {FaLinkedinIn} from 'react-icons/fa'
 import { BsFillPersonLinesFill } from 'react-icons/bs'
 import {HiOutlineChevronDoubleUp} from 'react-icons/hi'
+import axios from 'axios'
+import  {useState} from 'react'
 
 const Contact = () => {
+
+        
+
     return (
         <div id='contact' className='w-full lg:h-screen'>
             <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
@@ -65,7 +70,7 @@ const Contact = () => {
                                     <label className='uppercase text-sm py-2'>Message</label>
                                     <textarea className='border-2 rounded-lg p-3 flex border-gray-300' rows='10'></textarea>
                                 </div>
-                                <button className='shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white w-full p-4 mt-4'>Send Message</button>
+                                <button  className='shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white w-full p-4 mt-4'>Send Message</button>
                             </form>
                         </div>
                      </div>

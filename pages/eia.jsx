@@ -30,7 +30,7 @@ const eia = () => {
                         <Link href='https://www.premiumoutlets.com/outlet/premium-outlet-collection-edmonton-international-airport'><button className='px-8 py-2 mt-4 mr-8'><a target="_blank">EIA Outlet Mall</a></button></Link>
                     </div>
                     <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
-                        <div className='p-2'>
+                        <div className='p-2 grid grid-cols-3 md:grid-cols-1'>
                             <p className='text-center font-bold pb-2'>Job Specs</p>
                             <div>
                                 <p className='text-gray-600 py-2 flex items-center'>
@@ -60,6 +60,9 @@ const eia = () => {
                             </div>
                         </div>
                     </div>
+                    <Link href="/#projects">
+                        <p className='underline cursor-pointer'>Back</p>
+                    </Link>
                 </div>
         </div>
     )

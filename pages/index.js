@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>CLA</title>
         <meta name="description" content="Generated"></meta>
-        <link ref="icon" href="/favicon.ico"></link>
+        <link ref="icon" href="/navLogo.png"></link>
       </Head>
       <Main />
       <About />

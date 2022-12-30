@@ -27,10 +27,10 @@ const ardrossan = () => {
                         <p className='text-[#fdad5c] text-xl'>Project</p>
                         <h2>Overview</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                        <Link href=''><button className='px-8 py-2 mt-4 mr-8'>Ardrossan</button></Link>
+                        <Link href='https://www.strathcona.ca/recreation-events/recreation-centres/ardrossan-recreation-complex/'><button className='px-8 py-2 mt-4 mr-8'>Ardrossan</button></Link>
                     </div>
                     <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4'>
-                        <div className='p-2'>
+                        <div className='p-2 grid grid-cols-3 md:grid-cols-1'>
                             <p className='text-center font-bold pb-2'>Job Specs</p>
                             <div>
                                 <p className='text-gray-600 py-2 flex items-center'>
@@ -57,6 +57,9 @@ const ardrossan = () => {
                             </div>
                         </div>
                     </div>
+                    <Link href="/#projects">
+                        <p className='underline cursor-pointer'>Back</p>
+                    </Link>
                 </div>
         </div>
     )
